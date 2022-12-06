@@ -109,7 +109,7 @@ html {
     border-radius: 4px;
     box-sizing: border-box;
   }
-
+/* test getelemetid plus my cols */
   #field1 {
     color: #0b5394;
     font-size: 5rem;
@@ -122,3 +122,75 @@ html {
     font-size: 5rem;
     text-align: center;
   }
+
+  /* Comment Css Pomodoro Example Timer */
+
+  #containerP{
+    border:1px solid #333;
+    border-radius :20px;
+    width:400px;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+    background : #333;
+  }
+  
+  #timerP{ 
+    color:#f00; 
+    font-size:50px; 
+    margin:10px auto;
+    border : 5px solid red;
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+  }
+  
+  #timeP{
+    margin-top:70px;
+    z-index : 1;
+    position:relative;
+  }
+  
+  #filler{
+    background : #ddffcc;
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+  }
+  
+  #buttons button { 
+    background:#4da6ff; 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:10px auto;
+    font-size:14px;
+    height : 50px;
+    border-radius : 50px;
+  }
+  
+  #buttons button#shortBreak{
+    background : #0c0;
+  }
+  
+  #buttons button#longBreak{
+    background : #080;
+  }
+  
+  #buttons button#stop{
+    background : #f00;
+  }
+  
+
+
+  
