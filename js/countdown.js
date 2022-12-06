@@ -100,3 +100,35 @@ function timer(){
 function stopInterval() {
     clearInterval(startTimer);
 }
+// Exercises
+
+
+let d;
+
+d = new Date();
+d = new Date(111255454525);
+d = new Date("2022-12-12T14:00:00");
+d = new Date(2022, 11, 2, 11, 30, 22, 0);
+d = new Date();
+
+console.log(d.getDay());
+console.log(d.getDate());
+console.log(d.getMonth());
+console.log(d.getFullYear());
+console.log(d.getTime());
+console.log(d.getHours());
+console.log(d.getMinutes());
+console.log(d.getSeconds());
+console.log(d.toString());
+
+d.setMinutes(15);
+d.setDate(15);
+d.setHours(13);
+d.setFullYear(2023);
+
+
+console.log(d.toString()); 
+
+console.log(d.toISOString());
+
+ 
