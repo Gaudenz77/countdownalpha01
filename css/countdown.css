@@ -109,3 +109,16 @@ html {
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+  #field1 {
+    color: #0b5394;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  #field2 {
+    color: #ffffff  ;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+  }

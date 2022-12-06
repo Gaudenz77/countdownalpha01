@@ -121,14 +121,33 @@ console.log(d.getMinutes());
 console.log(d.getSeconds());
 console.log(d.toString());
 
-d.setMinutes(15);
-d.setDate(15);
-d.setHours(13);
-d.setFullYear(2023);
+d.setUTCMinutes(15);
+d.setUTCDate(15);
+d.setUTCHours(13);
+d.setUTCFullYear(2023);
 
 
 console.log(d.toString()); 
 
 console.log(d.toISOString());
 
- 
+console.log(d.toLocaleString());
+// TEst getDate over
+
+// start try getelemntbyId
+
+let fieldOne = document.getElementById('first-field');
+fieldOne.innerHTML = '<strong>00</strong';
+
+let fieldTwo = document.getElementById('second-field');
+fieldTwo.innerHTML = '<strong>00</strong';
+
+let fieldThree = document.getElementById('third-field');
+fieldThree.innerHTML = '<strong>00</strong';
+
+
+// Test get element by id inner HTML
+
+const myDiv = document.getElementById('my-div');
+
+myDiv.innerHTML = '<b>this is the content</b>';
