@@ -145,6 +145,16 @@ fieldTwo.innerHTML = '<strong>00</strong';
 let fieldThree = document.getElementById('third-field');
 fieldThree.innerHTML = '<strong>00</strong';
 
+let fieldFour = document.getElementById('fourth-field');
+fieldFour.innerHTML = '<strong>00</strong';
+
+let fieldFive = document.getElementById('fifth-field');
+fieldFive.innerHTML = '<strong>00</strong';
+
+let fieldSix = document.getElementById('sixth-field');
+fieldSix.innerHTML = '<strong>00</strong';
+
+
 // Pomodoro Example Timer
 var pomodoro = {
     started : false,
