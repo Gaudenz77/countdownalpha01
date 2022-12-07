@@ -5,119 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="./js/countdown.js"></script>
     <link rel="stylesheet" href="./css/countdown.css">
-    <script src="./js/countdown.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Test if Boorstrap is on!</h1>
-
-    <!-- Pop^modoro Example Timer-->
-<section>
-  <div id="pomodoro-app">
-      <div id="containerP">
-        <div id="timerP">
-          <div id="timeP">
-            <span id="minutes">25</span>
-            <span id="colon">:</span>
-            <span id="seconds">00</span>
-          </div>
-          <div id="filler"></div>
-        </div>
+    <h1>Countdown from 0</h1>
+<div class="alert alert-success" role="alert">
     
-        <div id="buttons">
-          <button id="work">Work</button>
-          <button id="shortBreak">Short Break</button>
-          <button id="longBreak">Long Break</button>
-          <button id="stop">Stop</button>
-        </div>
-      </div>
-    </div>
-</section>
-
-<section>   
-    <h1>Test Exercise youtube</h1>
-    <div class="container">
-        <div class="row justify-content-evenly">
-           <div class="col-sm-3 bg-info"></div>
-           <div class="col-sm-5 bg-warning"><h2 id="demo1"></h2></div>
-           <div class="col-sm-3 bg-success"></div>
-        </div>
-    </div>
-</section>-->
-
-    <p id="demo"></p>
-
-<section>
-    <h1>Input</h1>
-    <div class="container">
-        <div class="row justify-content-evenly">
-           <div class="col-sm-3 bg-info"></div>
-           <div class="col-sm-3 bg-warning">
-            <label for="set Date and Time wished">Set Time and Date wished to count down to:</label>
-            <input type="datetime-local" id="setfield1" name="begin" 
-            placeholder="dd-mm-yyyy" value=""
-            min="1997-01-01" max="2030-12-31">
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Button</a></div>
-           <div class="col-sm-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro quibusdam sed, natus ea dolorem debitis ab aspernatur dolore sit voluptates animi quis quidem laudantium expedita quae recusandae excepturi.</div>
-        </div>
-    </div>
-</section>
+<p id="display1">&nbsp</p>
+<p id="display2">&nbsp</p>
+<p id="display3">&nbsp</p>
+<p id="display4">&nbsp</p>
 
 
 
-<section>
-    <h1>Output</h1>
-    <div class="container">
-        <div class="row justify-content-evenly">
-           <div class="col-sm-3 bg-info"></div>
-           <div class="col-sm-3 bg-warning"><h2 id="demo1"></h2></div>
-           <div class="col-sm-3 bg-success"></div>
-        </div>
-    </div>
-</section>
+        <button type="button"
+                class = "btn btn-primary"
+                id = "startbutton"
+                onclick="startCountdownMin()";>Start</button>
+                <button type="button"
+                class = "btn btn-success"
+                id = "startbutton"
+                onclick="stopCountdownMin()";>Stop</button>
+    
+</div>
+
+
+
+
+<form>
+    <label id="hourlabel" class="label">Stunden
+        <input id="stunden" type="number" min="0" max="24">
+    </label>
+    <label id="minutelabel" class="label">Minuten
+        <input id="minuten" type="number" min="0" max="60">
+    </label>
+    <label id="secondlabel" class="label">Sekunden
+        <input id="sekunden" type="number" min="0" max="60">
+    </label>
+</form>
+<button class = "btn btn-primary" onclick="getTimeValues()">submit</button>
 
 
 
 
 
 
-<section>
-    <div id="container1">
-        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
-        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-        <button id="start" class="btn">Start</button>
-        <button id="reset" class="btn">Reset</button>
-    </div>
-</section>
 
-<section>
-    <h1>Exercises</h1>
 
-    <p id="test1"></p>
 
-</section>
-
-<section>
-<div class="container">
-    <div class="row justify-content-center my-4 p-4">
-        <div class="col-2 bg-info">
-          One of two columns
-        </div>
-        <div class="col-2 bg-info">
-          One of two columns
-        </div>
-      </div>
-    <div class="row justify-content-evenly">
-        <div class="col-sm-2 bg-info" id="field1"><p1 id="first-field"></p></div>
-        <div class="col-sm-1 bg-warning" id="field2">:</div>
-        <div class="col-sm-2 bg-info" id="field1"><p2 id="second-field"></p></div>
-        <div class="col-sm-1 bg-warning" id="field2">:</div>
-        <div class="col-sm-2 bg-info" id="field1"><p3 id="third-field"></p></div>
-      </div>
-    </div>
-</section>
-
+<!--my layout-->
 <section>
     <div class="container">
         <div class="row justify-content-center my-4 p-4">
@@ -129,29 +67,38 @@
             </div>
           </div>
         <div class="row justify-content-evenly">
-            <div class="col-sm-2 bg-info" id="field1"><p1 id="fourth-field"></p></div>
+            <div class="col-sm-2 bg-info" id="field1"><p1 id="first-field"></p></div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p2 id="fifth-field"></p></div>  
+            <div class="col-sm-2 bg-info" id="field1"><p2 id="second-field"></p></div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p3 id="sixth-field"></p></div>
+            <div class="col-sm-2 bg-info" id="field1"><p3 id="third-field"></p></div>
           </div>
         </div>
     </section>
+    
+  
 
-<!--test document.getElementById-->
-<section></section>
-<!-- <div id="my-div"></div>
 
-<p5 id="mytext" onclick="changeText();">Click Me</p5> -->
+<!-- <h1><span>Countdown Timer</span></h1>
+</div>
 
-<p id="demo">this</p>
+<div id="canvas" class="container group">
 
-<!--MY Forms-->
+<div id="primaryContent" class="group">
+    <p>Input the time in minutes and click start</p>
+    <div id="inputArea"></div>
+    <h2 id="time">0:00</h2> -->
+
+
+
+   
 
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
 </body>
-</htmls
+</html>
