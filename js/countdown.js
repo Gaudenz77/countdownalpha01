@@ -1,44 +1,9 @@
-/* var days;
+var days;
 var hours;
 var minutes;
 var seconds;
 
-var seconds; 
-var maxCountSec = 60;
-var intervalIdSec;         // zum stoppen des Intervalls
-
-
-function setDisplay1(sekunden) {  // kann String od Zahl sein
-    document.getElementById("display1").innerText = sekunden;}
-
-function startCountdownSec() {
-    stopCountdownSec(); // falls es schomn eine Timer gibt: zuerst stoppen
-    setDisplay1(maxCountSec); // Unterfunktion, 
-    seconds = maxCountSec;   // Counter in Anfangszustand
-    // Verwende die Referenz (namen) OHNE KLAMMER, da die Funktion nur geholt(ref) und untenals ausführung gesetzt wird
-    intervalIdSec = setInterval(updateCounterSec, 1000); // jede sekunde zähler aktualisiert
-}
-
-function stopCountdownSec() {
-    // javascript-eigene funktion
-    clearInterval(intervalIdSec);
-}
-
-function updateCounterSec() {
-    seconds = seconds - 1; // kurzform count--;
-    // if done then stop updating
-    if(seconds === 0) {
-        //countdown fertig
-        setDisplay1('Go!');
-        stopCountdownSec();
-    }
-    else {
-        // zeigt aktuellen Count
-        setDisplay1(seconds);
-    }    
-}
-
-var minutes; 
+var count; 
 var maxCountMin = 60;
 var intervalIdMin;
 
@@ -80,7 +45,11 @@ function updateCounterMin() {
         setDisplay2(minutes);
     }
     
-} */
+}
+
+const thisDate = new Date();
+console.log(thisDate);
+
 
 function getTimeValues() {
   var  hours = parseInt(document.getElementById("stunden").value);
@@ -92,7 +61,73 @@ function getTimeValues() {
   return false;
 }
 
-      /* Example main function from Internet */
+//  I need:
+const timeNeeded = new Date();
+timeNeeded.getHours();
+timeNeeded.getMinutes();
+timeNeeded.getSeconds();
+timeNeeded.getMilliseconds();
+timeNeeded.getTime();
+
+// and maybe:
+let ms = Date.now();
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+
+const myDate1 = Date.now();
+console.log(myDate1);
+
+// and then
+
+function referenceTime /* startTimer??? */ (){
+  if (deltaMilliSec >= (countdownMilliSec = startTimer))
+  clearInterval(intervalId); /* countdown stopps */
+
+
+}
+/*
+startMilliSec = Date.now();
+currentMilliSec =  Date.now();
+deltaMilliSec = (currentmilliSec - startmilliSec); 
+countdownMilliSec = startTimer (input-no. input-field)
+
+
+
+*/
+// my layout //
+let fieldOne = document.getElementById('first-field');
+fieldOne.innerHTML = '<strong>00</strong';
+
+let fieldTwo = document.getElementById('second-field');
+fieldTwo.innerHTML = '<strong>00</strong';
+
+let fieldThree = document.getElementById('third-field');
+fieldThree.innerHTML = '<strong>00</strong';
+
+var count; 
+var maxCount = 60;
+var intervalId;
+
+
+function setDisplay(info) {  // kann String od Zahl sein
+    document.getElementById("display").innerText = info;}
+
+function startTimer() {
+  stopTimer(); // falls es schomn eine Timer gibt: zuerst stoppen
+  setDisplay(maxCount); // Unterfunktion, 
+  count = maxCount;   // Counter in Anfangszustand
+  // Verwende die Referenz (namen) OHNE KLAMMER, da die Funktion nur geholt(ref) und untenals ausführung gesetzt wird
+  intervalIdSec = setInterval(updateCounter, 1000); // jede sekunde zähler aktualisiert
+
+}
+
+function stopTimer() {
+  // javascript-eigene funktion
+  clearInterval(intervalId);
+
+}
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 8, 2022 15:30:00").getTime();
@@ -124,16 +159,26 @@ if (distance < 0) {
 }, 1000);
 
 
+/* let myTest = document.getElementById('demo');
+myTest.innerHTML = '<strong>Test</strong';
+
+const myName = "Gaudenz";
+
+console.log(myName);
+
+const thisDate = new Date();
+console.log(thisDate); */
 
 
+
+
+
+
+
+
+/* example
 
 let sekunden = document.querySelector('#sekunden');
-
-// Handle number changes
-/* num.addEventListener('input', function () {
-var a = document.getElementsByName("number");
-}); */
-
 
 
 var mySeconds;
@@ -180,42 +225,27 @@ intervalHandle=setInterval(tick, 1000);
 document.getElementById("inputArea").style.display="none";
 
 
-}
-
-
-// my layout //
-let fieldOne = document.getElementById('first-field');
-fieldOne.innerHTML = '<strong>00</strong';
-
-let fieldTwo = document.getElementById('second-field');
-fieldTwo.innerHTML = '<strong>00</strong';
-
-let fieldThree = document.getElementById('third-field');
-fieldThree.innerHTML = '<strong>00</strong';
-
-let fieldFour = document.getElementById('fourth-field');
-fieldFour.innerHTML = '<strong>00</strong';
-
-let fieldFive = document.getElementById('fifth-field');
-fieldFive.innerHTML = '<strong>00</strong';
-
-let fieldSix = document.getElementById('sixth-field');
-fieldSix.innerHTML = '<strong>00</strong';
-
-/* window.onload=function(){
-var myInput=document.createElement("input");
-myInput.setAttribute("type","text");
-myInput.setAttribute("id","minutes");
-
-var myButton=document.createElement("input");
-myButton.setAttribute("type","button");
-myButton.setAttribute("value","Start Timer");
-
-myButton.onclick=function(){
-  startCounter();	
-  
-}
-document.getElementById("inputArea").appendChild(myInput);
-document.getElementById("inputArea").appendChild(myButton);
-
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
