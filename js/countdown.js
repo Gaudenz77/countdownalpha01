@@ -176,6 +176,35 @@ console.log(thisDate); */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* example
 
 let sekunden = document.querySelector('#sekunden');
@@ -226,6 +255,8 @@ document.getElementById("inputArea").style.display="none";
 
 
 } */
+
+
 
 
 
