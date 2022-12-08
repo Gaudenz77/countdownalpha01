@@ -14,7 +14,7 @@
 <div class="alert alert-success" role="alert">
     
 
-<p id="display2">&nbsp</p>
+<!-- <p id="display2">&nbsp</p>
 
 
 
@@ -29,10 +29,10 @@
                 id = "startbutton"
                 onclick="stopCountdownMin()";>Stop</button>
     
-</div>
+</div> -->
 
 
-
+<p id="display">&nbsp</p>
 
 <form>
     <label id="hourlabel" class="label">Stunden
@@ -52,24 +52,22 @@
     <div class="container">
         <div class="row justify-content-evenly my-4 p-4">
             <div class="col-2 bg-info" class="columnBtn">
-             <h3>Start</h3>
-             <button class="btn btn-outline-success m-3 p-4" onclick="a";>Press to Start</button>
+             <button class="btn btn-outline-success m-3 p-4" onclick="startTimer()">Press to Start</button>
             </div>
             <div class="col-2 bg-info" class="columnBtn">
-              <h3>Stop</h3>
-              <button class="btn btn-outline-danger m-3 p-4" onclick="b";>Press to  Stop</button>
+              <button class="btn btn-outline-danger m-3 p-4" onclick="stopTimer()">Press to  Stop</button>
             </div>
           </div>
         <div class="row justify-content-evenly">
-            <div class="col-sm-2 bg-info" id="field1"><p id="first-field"></p>std</div>
+            <div class="col-sm-2 bg-info" id="field1"><p id="Hours"></p>std</div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="second-field"></p>min</div>
+            <div class="col-sm-2 bg-info" id="field1"><p id="Minutes"></p>min</div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="third-field"></p>sec</div>
+            <div class="col-sm-2 bg-info" id="field1"><p id="Seconds"></p>sec</div>
           </div>
         </div>
     </section>
-    
+    <p id="display">&nbsp</p>
 
     <p id="demo">&nbsp;</p>
   
