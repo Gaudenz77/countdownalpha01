@@ -21,3 +21,23 @@ The Task was vreating a countdown-timer, using all our newly learned abilities, 
 * press start-button left to set ("Press To Start"(b5 success))
 * if needed, press stop-button to the right ("Press To Stop" b5 danger)
 * to clear the counter press button on bottom of window to reset timer ("Press Here To Reset Timer"(b5 info))
+* ## Rinse and Repeat.<br>Thank you for your time.
+---
+## Issues
+* if counter shows NaN (Not A Number) refresh page
+* try on different browsers
+----
+## License
+* thanks to Johnen Vasquez, background pic
+----
+## Tools used
+* Visual Studio Code (Html, Css, JS)
+* Internet for research
+* co-trainees for hearing my most stupid quastions
+* Github (for file repo/sharing/workflow)
+* Figma
+----
+# Thanks to:
+* thanks to Chris for taking lot of time
+* thanks to my co-trainees for every help provided
+* thanks to my nerves
