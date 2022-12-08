@@ -32,6 +32,7 @@ The Task was vreating a countdown-timer, using all our newly learned abilities, 
 ----
 ## Tools used
 * Visual Studio Code (Html, Css, JS)
+* [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=de)
 * Internet for research
 * co-trainees for hearing my most stupid quastions
 * Github (for file repo/sharing/workflow)
