@@ -10,48 +10,56 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Countdown from 01</h1>
+    <h2>Please Set Your Count - Down</h2>
 
 <p id="display" style="color: transparent;"></p>
-<div class="alert alert-success" role="alert">
+
     
 
-<section>
-    <form>
-        <label id="hourlabel" class="label">Stunden
-            <input id="stunden" type="number" min="0" max="24">
-        </label>
-        <label id="minutelabel" class="label">Minuten
-            <input id="minuten" type="number" min="0" max="60">
-        </label>
-        <label id="secondlabel" class="label">Sekunden
-            <input id="sekunden" type="number" min="0" max="60">
-        </label>
-    </form>
-    <button class = "btn btn-primary" onclick="getTimeValues()">submit</button>
+<section class="blockOne">
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <form>
+                <label id="hourlabel" class="label">Stunden
+                    <input id="stunden" type="number" min="0" max="24">
+                </label>
+                <label id="minutelabel" class="label">Minuten
+                    <input id="minuten" type="number" min="0" max="60">
+                </label>
+                <label id="secondlabel" class="label">Sekunden
+                    <input id="sekunden" type="number" min="0" max="60">
+                </label>
+            </form>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-success my-3 p-2" onclick="startTimer()">Press to Start</button>
+                <button type="button" class="btn btn-outline-warning my-3" onclick="getTimeValues()">Press NOW To Set Your Time!</button>
+                <button type="button" class="btn btn-danger my-3 p-2" onclick="stopTimer()">Press to  Stop</button>
+              </div>
+        </div>
+    </div>
 </section>
 
 <section>
     <div class="container">
-        <div class="row justify-content-evenly my-4 p-4">
-            <div class="col-2 bg-info" class="columnBtn">
-             <button class="btn btn-outline-success m-3 p-4" onclick="startTimer()">Press to Start</button>
-            </div>
-            <div class="col-2 bg-info" class="columnBtn">
-              <button class="btn btn-outline-danger m-3 p-4" onclick="stopTimer()">Press to  Stop</button>
-            </div>
-          </div>
-        <div class="row justify-content-evenly" id="counterField">
-            <div class="col-sm-2 bg-info" id="field1"><p id="Hours">00</p>std</div>
-            <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="Minutes">00</p>min</div>
-            <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="Seconds">00</p>sec</div>
+       
+        <div class="row justify-content-center" id="counterField">
+            <div class="col-sm-2" id="field1"><p id="Hours">00</p>std</div>
+            <div class="col-sm-1" id="field2">:</div>
+            <div class="col-sm-2" id="field1"><p id="Minutes">00</p>min</div>
+            <div class="col-sm-1" id="field2">:</div>
+            <div class="col-sm-2" id="field1"><p id="Seconds">00</p>sec</div>
           </div>
         </div>
     </section>
  
-  
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col3"></div>
+            <div class="col-3"><button type="button" class="btn btn-info " id="btn2" value="Reload Page" onClick="window.location.reload();">Press Here To Reset Timer</button></div>
+            <div class="col3"></div>
+            
+        </div>
+    </div>
 
 
 
