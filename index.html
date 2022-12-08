@@ -11,43 +11,26 @@
 </head>
 <body>
     <h1>Countdown from 0</h1>
+
+<p id="display" style="color: transparent;"></p>
 <div class="alert alert-success" role="alert">
     
 
-<!-- <p id="display2">&nbsp</p>
+<section>
+    <form>
+        <label id="hourlabel" class="label">Stunden
+            <input id="stunden" type="number" min="0" max="24">
+        </label>
+        <label id="minutelabel" class="label">Minuten
+            <input id="minuten" type="number" min="0" max="60">
+        </label>
+        <label id="secondlabel" class="label">Sekunden
+            <input id="sekunden" type="number" min="0" max="60">
+        </label>
+    </form>
+    <button class = "btn btn-primary" onclick="getTimeValues()">submit</button>
+</section>
 
-
-
-
-
-        <button type="button"
-                class = "btn btn-primary"
-                id = "startbutton"
-                onclick="startCountdownMin()";>Start</button>
-                <button type="button"
-                class = "btn btn-success"
-                id = "startbutton"
-                onclick="stopCountdownMin()";>Stop</button>
-    
-</div> -->
-
-
-<p id="display">&nbsp</p>
-
-<form>
-    <label id="hourlabel" class="label">Stunden
-        <input id="stunden" type="number" min="0" max="24">
-    </label>
-    <label id="minutelabel" class="label">Minuten
-        <input id="minuten" type="number" min="0" max="60">
-    </label>
-    <label id="secondlabel" class="label">Sekunden
-        <input id="sekunden" type="number" min="0" max="60">
-    </label>
-</form>
-<button class = "btn btn-primary" onclick="getTimeValues()">submit</button>
-
-<!--my layout-->
 <section>
     <div class="container">
         <div class="row justify-content-evenly my-4 p-4">
@@ -58,18 +41,16 @@
               <button class="btn btn-outline-danger m-3 p-4" onclick="stopTimer()">Press to  Stop</button>
             </div>
           </div>
-        <div class="row justify-content-evenly">
-            <div class="col-sm-2 bg-info" id="field1"><p id="Hours"></p>std</div>
+        <div class="row justify-content-evenly" id="counterField">
+            <div class="col-sm-2 bg-info" id="field1"><p id="Hours">00</p>std</div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="Minutes"></p>min</div>
+            <div class="col-sm-2 bg-info" id="field1"><p id="Minutes">00</p>min</div>
             <div class="col-sm-1 bg-warning" id="field2">:</div>
-            <div class="col-sm-2 bg-info" id="field1"><p id="Seconds"></p>sec</div>
+            <div class="col-sm-2 bg-info" id="field1"><p id="Seconds">00</p>sec</div>
           </div>
         </div>
     </section>
-    <p id="display">&nbsp</p>
-
-    <p id="demo">&nbsp;</p>
+ 
   
 
 

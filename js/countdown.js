@@ -16,13 +16,13 @@ function getTimeValues() {
 
 // my layout //
 let fieldOne = document.getElementById('first-field');
-fieldOne.innerHTML = '<strong>22</strong';
+fieldOne.innerHTML = '';
 
 let fieldTwo = document.getElementById('second-field');
-fieldTwo.innerHTML = '<strong>00</strong';
+fieldTwo.innerHTML = '';
 
 let fieldThree = document.getElementById('third-field');
-fieldThree.innerHTML = '<strong>00</strong';
+fieldThree.innerHTML = '';
 
 function setDisplay(info) {  // kann String od Zahl sein
     document.getElementById("display").innerText = info;
@@ -36,6 +36,8 @@ function startTimer() {
   intervalId = setInterval(updateCounter, 1000); // jede sekunde zähler aktualisiert
 
 }
+
+
 
 function stopTimer() {
   // javascript-eigene funktion
@@ -73,13 +75,7 @@ console.log(hours, minutes, seconds);
 
 
 
-  // if done then stop updating
-  if(count <= 0) {
-      //countdown fertig
-      setDisplay('Go!');
-      stopCountdown();
-  }
-  
+
   
 }
 
